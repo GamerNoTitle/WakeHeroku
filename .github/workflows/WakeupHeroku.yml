@@ -39,7 +39,7 @@ jobs:
         git config --global user.email WakeHeroku@email.com
         git config --global user.name WakeHeroku
         git add .
-        git commit -m "Successful Wake" -a
+        git commit -m "Sites have been woke up successfully" -a
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
