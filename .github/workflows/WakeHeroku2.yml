@@ -10,7 +10,7 @@ on:
   #  branches: 
   #    - master
   schedule:
-    - cron: "*/18 0-15 * * *"
+    - cron: "*/18 * 15-* * *"
   watch:
     types: [started]
    
@@ -30,9 +30,9 @@ jobs:
         pip install requests
     - name: Waking  # Read sites
       env: 
-        $CONFIG_SITE: ${{ secrets.Site }} # Get site from secrets
+        $CONFIG_SITE: ${{ secrets.Site2 }} # Get site from secrets
       run: | 
-        python run.py ${{ secrets.Site }}
+        python run.py ${{ secrets.Site2 }}
         echo `date +"%Y-%m-%d %H:%M:%S"` begin > time.log
     - name: Commit # update log to Github
       run: |
