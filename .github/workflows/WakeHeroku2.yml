@@ -1,5 +1,5 @@
 # Wake up your Heroku application by using Github Action
-name: AutoWakeupHeroku
+name: AutoWakeupHeroku2
 
 on: 
   release:
@@ -10,7 +10,7 @@ on:
   #  branches: 
   #    - master
   schedule:
-    - cron: "*/18 * 15-* * *"
+    - cron: "*/19 * 15-* * *"
   watch:
     types: [started]
    
