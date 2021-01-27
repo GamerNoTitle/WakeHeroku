@@ -10,7 +10,7 @@ on:
   #  branches: 
   #    - master
   schedule:
-    - cron: "*/18 0-15 * * *"
+    - cron: "*/18 * * * *"
   watch:
     types: [started]
    
@@ -37,7 +37,7 @@ jobs:
     - name: Commit # update log to Github
       run: |
         git config --global user.email GamerPesy@outlook.com
-        git config --global user.name Haikido
+        git config --global user.name ElainaMoe
         git add .
         git commit -m "Sites have been woke up successfully" -a
     - name: Push changes
