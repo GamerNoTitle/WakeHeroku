@@ -33,14 +33,3 @@ jobs:
         $CONFIG_SITE: ${{ secrets.Site2 }} # Get site from secrets
       run: | 
         python run.py ${{ secrets.Site2 }}
-        echo `date +"%Y-%m-%d %H:%M:%S"` begin > time.log
-    - name: Commit # update log to Github
-      run: |
-        git config --global user.email GamerPesy@outlook.com
-        git config --global user.name Haikido
-        git add .
-        git commit -m "Sites have been woke up successfully" -a
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
