@@ -2,7 +2,7 @@ import requests
 import sys
 import time
 
-urls = ['https://share4nothing.ml','https://rss.bili33.top','https://zfile.share4nothing.ml']
+urls = ['https://ninym.top']
 
 for i in range(0, len(urls)):
     req = requests.get(urls[i])
