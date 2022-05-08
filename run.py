@@ -2,7 +2,7 @@ import requests
 import sys
 import time
 
-urls = ['https://ninym.top','https://repl.api.ninym.top']
+urls = ['https://pan.5am.bili33.top']
 
 for i in range(0, len(urls)):
     req = requests.get(urls[i])
